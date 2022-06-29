@@ -12,7 +12,7 @@ import redis
 
 
 class FTPService:
-    def __init__(self, host='10.19.116.26', port=21, username='hik', password='hikvision'):
+    def __init__(self, host='10.33.140.46', port=21, username='hik', password='hikvision'):
         self.host = host
         self.port = port
         self.username = username
@@ -43,7 +43,7 @@ def regular_build(component):
                'tvms': '1365',
                'cloud': '51204',
                'cloud_dev': '34541'}
-    service = 'http://10.19.115.25:8000/'
+    service = 'http://10.1.243.220:8000/'
     url = 'get_jenkins_info'
     jenkins_url = 'http://jk.hikvision.com.cn/query/BuildHistoryGridCmd.ashx?projectId=' + \
                   cmpt_id[component] + '&favorite=0&_page=1&rowNum=10'
